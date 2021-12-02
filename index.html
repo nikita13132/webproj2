@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'>
+    <!--подключения шрифта-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <!--подключение шрифта Goudy Bookletter 1911-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+    <!--подключение jquery-->
+    <script src="src/libs/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="src/js/script.js"></script>
+    <title>Ancient treasures</title>
+</head>
+<body> 
+    <!--header часть-->
+    <header class="header">
+        <div class="header__menu">
+            <div class="header__burg">
+                <span></span>
+            </div>
+            <div class="header__logo">
+                <a href="index.html" class="header__logo-link">
+                    <img class="header__logo-anc" src="img/ancient_treasures.png" alt="">
+                </a>
+            </div>
+            <div class="header__nav">
+                <ul class="header__ul">
+                    <li class="header__ul-item header__ul-mobilesearch">
+                        <form class="header__form">
+                            <input class="header__form-input" type="text" placeholder="Type your search">
+                            <button class="header__form-btn" type="submit"></button>
+                        </form>
+                    </li>
+                    <li class="header__ul-item">
+                        <a href="#">
+                            Vikings
+                        </a>
+                    </li>
+                    <li class="header__ul-item">
+                        <a href="#">
+                            Ancient Egypt
+                        </a>
+                    </li>
+                    <li class="header__ul-item">
+                        <a href="#">
+                            Celtics
+                        </a>
+                    </li>
+                    <li class="header__ul-item header__ul-caps">
+                        <a href="#">
+                            Sale
+                        </a>
+                    </li>
+                    <li class="header__ul-item header__ul-search">
+                        <a href="#">
+                            <img class="header__menu-search" id="search" src="img/search.png" alt="search">
+                        </a>
+                    </li>
+                    <li class="header__ul-item header__ul-cart">
+                        <a href="#">
+                            <img class="header__img-cart" src="img/cart.png" alt="cart">
+                        </a>                        
+                    </li>
+                </ul>
+            </div>
+            <div class="header__cart">
+                <img class="header__img-cart" src="img/cart.png" alt="cart">
+            </div>
+        </div>       
+        <div class="cart">
+            <div class="cart__head">
+                <div class="cart__items">
+                    <p class="cart__p">Cart (8 items)</p>
+                </div>
+                <div class="cart__close">
+                    <span></span>
+                </div>
+            </div>
+            <div class="cart__main">
+                <div class="cart__item">
+                    <div class="cart__logo">
+                        <img src="img/Rectangle_2.png" alt="shop__item">
+                    </div>
+                    <div class="cart__content">
+                        <p>
+                            <a href="shop__item.html">
+                                Handmade Stainless Steel Massive Wolf Chain with Odin’s Protection Charm - 50cm / 20in
+                            </a>
+                        </p>
+                        <p class="cart__txt"> 
+                            $19.95 
+                            <span class="cart__p-linethrough">
+                                $29.95
+                            </span> 
+                        </p>
+                        <button class="cart__btn minus">-</button>
+                        <input class="cart__input" type="text" value="1">
+                        <button class="cart__btn plus">+</button>
+                    </div>
+                </div>
+                <div class="main__html-line"></div>
+                <div class="cart__item">
+                    <div class="cart__logo">
+                        <img src="img/Rectangle_2.3.png" alt="shop__item">
+                    </div>
+                    <div class="cart__content">
+                        <p>Handmade Stainless Steel Massive Wolf Chain with Odin’s Protection Charm - 50cm / 20in</p>
+                        <p class="cart__txt"> 
+                            $19.95 
+                            <span class="cart__p-linethrough">
+                                $29.95
+                            </span> 
+                        </p>
+                        <button class="cart__btn minus">-</button>
+                        <input class="cart__input" type="text" value="1">
+                        <button class="cart__btn plus">+</button>
+                    </div>
+                </div>
+                <div class="main__html-line"></div>
+                <div class="cart__item">
+                    <div class="cart__logo">
+                        <img src="img/Rectangle_2.4.png" alt="shop__item">
+                    </div>
+                    <div class="cart__content">
+                        <p>Handmade Stainless Steel Massive Wolf Chain with Odin’s Protection Charm - 50cm / 20in</p>
+                        <p class="cart__txt"> 
+                            $19.95 
+                            <span class="cart__p-linethrough">
+                                $29.95
+                            </span> 
+                        </p>
+                        <button class="cart__btn minus">-</button>
+                        <input class="cart__input" type="text" value="1">
+                        <button class="cart__btn plus">+</button>
+                    </div> 
+                </div>
+            </div>
+            <div class="cart__footer">
+                <div class="cart__abs">
+                    <p>
+                        Subtotal
+                        <span>
+                            $144.95
+                        </span>
+                    </p>
+                    <button class="cart__btn-white">View cart</button>
+                    <button class="cart__btn-red">Proceed to checkout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--main часть-->
+    <main class="main">
+        <div class="main__container">
+            <div class="main__container-right">
+                <p class="main__hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, numquam!</p>
+            </div>
+            <div class="main__container-center">
+                <p class="main__container-p">
+                    <span class="main__container-line"></span>
+                </p>
+                <p class="main__container-txt">
+                    Fenrir The Monster Wolf of Norse 
+                    <br>
+                    Mythology Necklace
+                </p>
+                <p class="main__container-txt"> 
+                    $19.95 
+                    <span class="main__container-linethrough">
+                        $29.95
+                    </span> 
+                </p>
+                <button class="main__container-button" id="btn__shop">Start Shopping</button>
+            </div>
+            <div class="main__container-left">
+                <p class="main__hidden">lorem</p>
+            </div>
+        </div>  
+    </main>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+</html>

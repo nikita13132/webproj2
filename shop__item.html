@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'>
+    <!--подключения шрифта-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <!--подключение шрифта Goudy Bookletter 1911-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+    <!--подключение jquery-->
+    <script src="src/libs/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="src/js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--header часть-->
+    <header class="header">
+        <div class="header__menu">
+            <div class="header__burg">
+                <span></span>
+            </div>
+            <div class="header__logo">
+                <a href="index.html" class="header__logo-link">
+                    <img class="header__logo-anc" src="img/ancient_treasures.png" alt="">
+                </a>
+            </div>
+            <div class="header__nav">
+                <ul class="header__ul">
+                    <li class="header__ul-item header__ul-mobilesearch">
+                        <form class="header__form">
+                            <input class="header__form-input" type="text" placeholder="Type your search">
+                            <button class="header__form-btn" type="submit"></button>
+                        </form>
+                    </li>
+                    <li class="header__ul-item">
+                        <a href="#">
+                            Vikings
+                        </a>
+                    </li>
+                    <li class="header__ul-item">
+                        <a href="#">
+                            Ancient Egypt
+                        </a>
+                    </li>
+                    <li class="header__ul-item">
+                        <a href="#">
+                            Celtics
+                        </a>
+                    </li>
+                    <li class="header__ul-item header__ul-caps">
+                        <a href="#">
+                            Sale
+                        </a>
+                    </li>
+                    <li class="header__ul-item header__ul-search">
+                            <img class="header__menu-search" id="search" src="img/search.png" alt="search">
+                    </li>
+                    <li class="header__ul-item header__ul-cart">
+                        <a href="#">
+                            <img class="header__img-cart" src="img/cart.png" alt="cart">
+                        </a>                        
+                    </li>
+                </ul>
+            </div>
+            <div class="header__cart">
+                <img class="header__img-cart" src="img/cart.png" alt="cart">
+            </div>
+        </div>        
+        <div class="cart">
+            <div class="cart__head">
+                <div class="cart__items">
+                    <p class="cart__p">Cart (8 items)</p>
+                </div>
+                <div class="cart__close">
+                    <span></span>
+                </div>
+            </div>
+            <div class="cart__main">
+                <div class="cart__item">
+                    <div class="cart__logo">
+                        <img src="img/Rectangle_2.png" alt="shop__item">
+                    </div>
+                    <div class="cart__content">
+                        <p>
+                            <a href="shop__item.html">
+                                Handmade Stainless Steel Massive Wolf Chain with Odin’s Protection Charm - 50cm / 20in
+                            </a>
+                        </p>                        
+                        <p class="cart__txt"> 
+                            $19.95 
+                            <span class="cart__p-linethrough">
+                                $29.95
+                            </span> 
+                        </p>
+                        <button class="cart__btn minus">-</button>
+                        <input class="cart__input" type="text" value="1">
+                        <button class="cart__btn plus">+</button>
+                    </div>
+                </div>
+                <div class="cart__item">
+                    <div class="cart__logo">
+                        <img src="img/Rectangle_2.3.png" alt="shop__item">
+                    </div>
+                    <div class="cart__content">
+                        <p>Handmade Stainless Steel Massive Wolf Chain with Odin’s Protection Charm - 50cm / 20in</p>
+                        <p class="cart__txt"> 
+                            $19.95 
+                            <span class="cart__p-linethrough">
+                                $29.95
+                            </span> 
+                        </p>
+                        <button class="cart__btn minus">-</button>
+                        <input class="cart__input" type="text" value="1">
+                        <button class="cart__btn plus">+</button>
+                    </div>
+                </div>
+                <div class="cart__item">
+                    <div class="cart__logo">
+                        <img src="img/Rectangle_2.4.png" alt="shop__item">
+                    </div>
+                    <div class="cart__content">
+                        <p>Handmade Stainless Steel Massive Wolf Chain with Odin’s Protection Charm - 50cm / 20in</p>
+                        <p class="cart__txt"> 
+                            $19.95 
+                            <span class="cart__p-linethrough">
+                                $29.95
+                            </span> 
+                        </p>
+                        <button class="cart__btn minus">-</button>
+                        <input class="cart__input" type="text" value="1">
+                        <button class="cart__btn plus">+</button>
+                    </div> 
+                </div>
+            </div>
+            <div class="cart__footer">
+                <p>
+                    Subtotal
+                    <span>
+                        $144.95
+                    </span>
+                </p>
+                <button class="cart__btn-white">View cart</button>
+                <button class="cart__btn-red">Proceed to checkout</button>
+            </div>
+        </div>
+    </header>
+    <div class="line"></div>
+    <main>
+        <div class="main__contr">
+            <div class="main__gallery">
+                <div class="main__pos-rel">
+                    <button class="main__btn-left btn-slider">
+                        <span class="main__artd-leftw"></span>
+                    </button>
+                    <img class="main__img" src="img/01.png" alt="">
+                    <button class="main__btn-right btn-slider">
+                        <span class="main__artd-rightw"></span>
+                    </button>
+                </div>
+                <div class="main__img-btm">
+                    <img class="main__img-small" src="img/01 (1).png" alt="">
+                    <img class="main__img-small" src="img/02.png" alt="">
+                    <img class="main__img-small" src="img/03.png" alt="">
+                </div>
+            </div>
+            <div class="main__info">
+                <p class="main__p-style">
+                    Handmade Stainless Steel Kings Chain Viking Geri 
+                    And Freki Mjolnir Necklace
+                </p>
+                <p class="main__p-bold">
+                    Choose your length
+                </p>
+                <p class="main__dropdown">
+                    60 CM (24 INCHES)
+                    <span class="main__artd"></span>
+                </p>
+                <p class="main__p-red">
+                    $19.95 
+                    <span class="main__span-small">Tax included</span>
+                </p>
+                <button class="main__btn minus">-</button>
+                <input class="main__input" type="text" value="1">
+                <button class="main__btn plus">+</button>
+                <button class="main__btn-red">Add To Cart</button>
+                <p class="main__p-bold">
+                    Handmade Chain Geri and Freki Viking Necklace with Thor Hammer Mjolnir!   
+                </p>
+                <p class="main__p-normal">
+                    The Kings chain was worn by Viking kings as a status symbol as the name applies. This is a 100% handmade Stainless Steel Chain. The crafting is a very time consuming process to put together the chain link by link.
+                    The hand made chain connects together with a lobster clamp.
+                </p>
+            </div>
+        </div>
+    </main>    
+</body>
+</html>
